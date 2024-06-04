@@ -4,7 +4,7 @@ const Todo = require("./controller");
 const { getReqData } = require("./utils");
 
 const PORT = process.env.PORT || 8080;
-const HOST = "localhost";
+const HOST = "0.0.0.0"; // Change to bind to all interfaces
 
 const server = http.createServer(async (req, res) => {
     console.log("Called" + req.method + " : " + req.url);
